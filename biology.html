@@ -1,208 +1,190 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <title>Track the Progress</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- Le styles -->
-    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="assets/css/docs.css" rel="stylesheet">
-    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="assets/js/html5shiv.js"></script>
-    <![endif]-->
-
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="assets/ico/favicon.png">
-<script>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>Track the Progress</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- Le styles -->
+  <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+  <link href="assets/css/docs.css" rel="stylesheet">
+  <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+  <script src="assets/js/html5shiv.js"></script>
+  <![endif]-->
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="assets/ico/favicon.png">
+  <script>
   offsetValue = 40;
   $('body').data().scrollspy.options.offset = offsetValue;
   // force scrollspy to recalculate the offsets to your targets
   $('body').data().scrollspy.process();
-</script>
-
-  </head>
-
-  <body data-spy="scroll" data-target="#static">
-
-    <div class="navbar navbar-fixed-top navbar-inverse">
-      <div class="navbar-inner">
-        <div class="container" style>
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="http://www.pravega.org">Pravega 2013</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li><a href="index.html">Home</a></li>
-              <li class="active"><a href="#">Biology</a></li>
-              <li><a href="chemistry.html">Chemistry</a></li>
-              <li><a href="enrg.html">Engineering</a></li>
-              <li><a href="math.html">Math</a></li>
-              <li><a href="physics.html">Physics</a></li>
-              <li><a href="cultural.html">Cultural</a></li>
-              <li><a href="misc.html">Misc</a></li>
-            </ul>
+  </script>
+</head>
+<body data-spy="scroll" data-target="#static">
+  <div class="navbar navbar-fixed-top navbar-inverse">
+    <div class="navbar-inner">
+      <div class="container" style>
+        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a class="brand" href="http://www.pravega.org">Pravega 2013</a>
+        <div class="nav-collapse collapse">
+          <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="#">Biology</a></li>
+            <li><a href="chemistry.html">Chemistry</a></li>
+            <li><a href="enrg.html">Engineering</a></li>
+            <li><a href="math.html">Math</a></li>
+            <li><a href="physics.html">Physics</a></li>
+            <li><a href="cultural.html">Cultural</a></li>
+            <li><a href="misc.html">Misc</a></li>
+          </ul>
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
-
     <div class="container" >
       <div class="row" style="margin-bottom: 40px">
-      <div class="span3 bs-docs-sidebar" id="static">
-        <ul class="nav nav-list bs-docs-sidenav" style="position: fixed">
-          <li><a href="#colors"><i class="icon-chevron-right"></i> Colours of Grey</a></li>
-          <li><a href="#lexico"><i class="icon-chevron-right"></i> Lexico Bio</a></li>
-          <li><a href="#fourth"><i class="icon-chevron-right"></i> The Fourth R: Re-envision</a></li>
-          <li><a href="#turn"><i class="icon-chevron-right"></i> Turn Coat</a></li>
-          <li><a href="#idea"><i class="icon-chevron-right"></i> The Idea Within</a></li>
-        </ul>
-      </div>
+        <div class="span3 bs-docs-sidebar" id="static">
+          <ul class="nav nav-list bs-docs-sidenav" style="position: fixed">
+            <li><a href="#colors"><i class="icon-chevron-right"></i> Colours of Grey</a></li>
+            <li><a href="#lexico"><i class="icon-chevron-right"></i> Lexico Bio</a></li>
+            <li><a href="#fourth"><i class="icon-chevron-right"></i> The Fourth R: Re-envision</a></li>
+            <li><a href="#turn"><i class="icon-chevron-right"></i> Turn Coat</a></li>
+            <li><a href="#idea"><i class="icon-chevron-right"></i> The Idea Within</a></li>
+          </ul>
+        </div>
         <div class="span9">
-        <section style="border-radius: 10px;" id="colors">
-              <p>
-                <span style="padding-right: 7px; font-size: 18px; font-weight: 700;">Colours of Grey</span>
-                <button class="btn btn-danger btn-small" type="button">Not yet started</button>
-                </p>
-              <div class="progress progress-danger">
-                <div class="bar" style="width: 1%"></div>
-              </div>
-
+          <section style="border-radius: 10px;" id="colors">
+            <p>
+            <span style="padding-right: 7px; font-size: 18px; font-weight: 700;">Colours of Grey</span>
+            <button class="btn btn-danger btn-small" type="button">Not yet started</button>
+            </p>
+            <div class="progress progress-danger">
+              <div class="bar" style="width: 1%"></div>
+            </div>
 <pre>
 <b>Assignees</b>: Aditya Hebbar, Pranav Mundada
 
 <b>Reviewers</b>: Not assigned
 
 <b>Tasks</b>:
-  <input class="task-list-item-checkbox" type="checkbox" checked="" value="on" disabled=""> Task 1
-  <input class="task-list-item-checkbox" type="checkbox" checked="" value="on" disabled=""> Task 2
-  <input class="task-list-item-checkbox" type="checkbox" disabled=""> Task 3
-  <input class="task-list-item-checkbox" type="checkbox" disabled=""> Task 4
-  <input class="task-list-item-checkbox" type="checkbox" disabled=""> Task 5
+              <input class="task-list-item-checkbox" type="checkbox" checked="" value="on" disabled=""> Task 1
+              <input class="task-list-item-checkbox" type="checkbox" checked="" value="on" disabled=""> Task 2
+              <input class="task-list-item-checkbox" type="checkbox" disabled=""> Task 3
+              <input class="task-list-item-checkbox" type="checkbox" disabled=""> Task 4
+              <input class="task-list-item-checkbox" type="checkbox" disabled=""> Task 5
 
 <b>Notes</b>: Not enough funds and resources</pre>
-
-        </section>
-
-        <hr>
-
-        <section style="border-radius: 3px 3px 3px 3px;" id="lexico">
-              <p>
-                <span style="padding-right: 7px; font-size: 18px; font-weight: 700;">Lexico Bio</span>
-                <button class="btn btn-warning btn-small" type="button">In Progress</button>
-                <span style="padding: 15px; font-size: 15px; font-weight: 600;">
-                  <b>Sponsors</b>: Biocon, Benz
-                </span>
-              </p>
-              <div class="progress progress-warning">
-                <div class="bar" style="width: 20%"></div>
-              </div>
+          </section>
+          <hr>
+          <section style="border-radius: 3px 3px 3px 3px;" id="lexico">
+            <p>
+            <span style="padding-right: 7px; font-size: 18px; font-weight: 700;">Lexico Bio</span>
+            <button class="btn btn-warning btn-small" type="button">In Progress</button>
+            <span style="padding: 15px; font-size: 15px; font-weight: 600;">
+            <b>Sponsors</b>: Biocon, Benz
+            </span>
+            </p>
+            <div class="progress progress-warning">
+              <div class="bar" style="width: 20%"></div>
+            </div>
 <pre>
 <b>Assignees</b>: Aditya Hebbar, Pranav Mundada
 
 <b>Reviewers</b>: Not assigned
 
 <b>Tasks</b>:
-  <input class="task-list-item-checkbox" type="checkbox" checked="" value="on" disabled=""> Task 1
-  <input class="task-list-item-checkbox" type="checkbox" checked="" value="on" disabled=""> Task 2
-  <input class="task-list-item-checkbox" type="checkbox" disabled=""> Task 3
-  <input class="task-list-item-checkbox" type="checkbox" disabled=""> Task 4
-  <input class="task-list-item-checkbox" type="checkbox" disabled=""> Task 5
+              <input class="task-list-item-checkbox" type="checkbox" checked="" value="on" disabled=""> Task 1
+              <input class="task-list-item-checkbox" type="checkbox" checked="" value="on" disabled=""> Task 2
+              <input class="task-list-item-checkbox" type="checkbox" disabled=""> Task 3
+              <input class="task-list-item-checkbox" type="checkbox" disabled=""> Task 4
+              <input class="task-list-item-checkbox" type="checkbox" disabled=""> Task 5
 
 <b>Notes</b>: Next update in a week</pre>
-        </section>
-
-        <section style="border-radius: 3px 3px 3px 3px;" id="fourth">
-              <p>
-                <span style="padding-right: 7px; font-size: 18px; font-weight: 700;">The fourth R: Re-envision</span>
-                <button class="btn btn-inverse btn-mini" type="button">Stalled</button>
-              </p>
-              <div class="progress progress-info">
-                <div class="bar" style="width: 50%"></div>
-              </div>
+          </section>
+          <section style="border-radius: 3px 3px 3px 3px;" id="fourth">
+            <p>
+            <span style="padding-right: 7px; font-size: 18px; font-weight: 700;">The fourth R: Re-envision</span>
+            <button class="btn btn-inverse btn-mini" type="button">Stalled</button>
+            </p>
+            <div class="progress progress-info">
+              <div class="bar" style="width: 50%"></div>
+            </div>
 <pre>
 <b>Assignees</b>: Aditya Hebbar, Pranav Mundada
 
 <b>Reviewers</b>: Not assigned
 
 <b>Tasks</b>:
-  <input class="task-list-item-checkbox" type="checkbox" checked="" value="on" disabled=""> Task 1
-  <input class="task-list-item-checkbox" type="checkbox" checked="" value="on" disabled=""> Task 2
-  <input class="task-list-item-checkbox" type="checkbox" disabled=""> Task 3
-  <input class="task-list-item-checkbox" type="checkbox" disabled=""> Task 4
-  <input class="task-list-item-checkbox" type="checkbox" disabled=""> Task 5
+              <input class="task-list-item-checkbox" type="checkbox" checked="" value="on" disabled=""> Task 1
+              <input class="task-list-item-checkbox" type="checkbox" checked="" value="on" disabled=""> Task 2
+              <input class="task-list-item-checkbox" type="checkbox" disabled=""> Task 3
+              <input class="task-list-item-checkbox" type="checkbox" disabled=""> Task 4
+              <input class="task-list-item-checkbox" type="checkbox" disabled=""> Task 5
 
 <b>Notes</b>: Waiting for resources</pre>
-        </section>
-
-        <section style="border-radius: 3px 3px 3px 3px;" id="turn">
-              <p>
-                <span style="padding-right: 7px; font-size: 18px; font-weight: 700;">Turn Coat</span>
-                <button class="btn btn-primary btn-mini" type="button">Under review</button>
-              </p>
-              <div class="progress progress-primary">
-                <div class="bar" style="width: 70%"></div>
-              </div>
+          </section>
+          <section style="border-radius: 3px 3px 3px 3px;" id="turn">
+            <p>
+            <span style="padding-right: 7px; font-size: 18px; font-weight: 700;">Turn Coat</span>
+            <button class="btn btn-primary btn-mini" type="button">Under review</button>
+            </p>
+            <div class="progress progress-primary">
+              <div class="bar" style="width: 70%"></div>
+            </div>
 <pre>
 <b>Assignees</b>: Aditya Hebbar, Pranav Mundada
 
 <b>Reviewers</b>: Terrence
 
 <b>Tasks</b>:
-  <input class="task-list-item-checkbox" type="checkbox" checked="" value="on" disabled=""> Task 1
-  <input class="task-list-item-checkbox" type="checkbox" checked="" value="on" disabled=""> Task 2
-  <input class="task-list-item-checkbox" type="checkbox" disabled=""> Task 3
-  <input class="task-list-item-checkbox" type="checkbox" disabled=""> Task 4
-  <input class="task-list-item-checkbox" type="checkbox" disabled=""> Task 5
+              <input class="task-list-item-checkbox" type="checkbox" checked="" value="on" disabled=""> Task 1
+              <input class="task-list-item-checkbox" type="checkbox" checked="" value="on" disabled=""> Task 2
+              <input class="task-list-item-checkbox" type="checkbox" disabled=""> Task 3
+              <input class="task-list-item-checkbox" type="checkbox" disabled=""> Task 4
+              <input class="task-list-item-checkbox" type="checkbox" disabled=""> Task 5
 
 <b>Notes</b>: Waiting for resources</pre>
-
-<b>Notes</b>: Review under process</pre>
-        </section>
-
-        <section style="border-radius: 3px 3px 3px 3px;" id="idea">
-              <p>
-                <span style="padding-right: 7px; font-size: 18px; font-weight: 700;">The Idea Within</span>
-                <button class="btn btn-success btn-mini" type="button">Completed</button>
-              </p>
-              <div class="progress progress-success">
-                <div class="bar" style="width: 100%"></div>
-              </div>
+          </section>
+          <section style="border-radius: 3px 3px 3px 3px;" id="idea">
+            <p>
+            <span style="padding-right: 7px; font-size: 18px; font-weight: 700;">The Idea Within</span>
+            <button class="btn btn-success btn-mini" type="button">Completed</button>
+            </p>
+            <div class="progress progress-success">
+              <div class="bar" style="width: 100%"></div>
+            </div>
 <pre>
 <b>Assignees</b>: Aditya Hebbar, Pranav Mundada
 
 <b>Reviewers</b>: Sriram S.
 
 <b>Tasks</b>:
-  <input class="task-list-item-checkbox" type="checkbox" checked="" value="on" disabled=""> Task 1
-  <input class="task-list-item-checkbox" type="checkbox" checked="" value="on" disabled=""> Task 2
-  <input class="task-list-item-checkbox" type="checkbox" disabled=""> Task 3
-  <input class="task-list-item-checkbox" type="checkbox" disabled=""> Task 4
-  <input class="task-list-item-checkbox" type="checkbox" disabled=""> Task 5
+              <input class="task-list-item-checkbox" type="checkbox" checked="" value="on" disabled=""> Task 1
+              <input class="task-list-item-checkbox" type="checkbox" checked="" value="on" disabled=""> Task 2
+              <input class="task-list-item-checkbox" type="checkbox" disabled=""> Task 3
+              <input class="task-list-item-checkbox" type="checkbox" disabled=""> Task 4
+              <input class="task-list-item-checkbox" type="checkbox" disabled=""> Task 5
 
 <b>Notes</b>: Waiting for resources</pre>
 
 <b>Notes</b>: Completed</pre>
-
-        </section>
+          </section>
+        </div>
       </div>
     </div>
-  </div>
-
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -220,10 +202,6 @@
     <script src="assets/js/bootstrap-carousel.js"></script>
     <script src="assets/js/bootstrap-typeahead.js"></script>
     <script src="assets/js/bootstrap-affix.js"></script>
-
     <script src="assets/js/holder/holder.js"></script>
     <script src="assets/js/google-code-prettify/prettify.js"></script>
-
-
-
-</body></html>
+  </body></html>
