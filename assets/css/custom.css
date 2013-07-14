@@ -1,0 +1,28 @@
+#lexico, #fourth, #turn {
+    border-top:50px solid transparent;
+    margin-top:-50px;
+    -webkit-background-clip:padding-box;
+    -moz-background-clip:padding;
+    background-clip:padding-box;
+}
+
+
+
+#colours {
+    position:relative;
+    padding:30px;
+    border-top:52px solid transparent;
+    margin-top:-70px;
+    -webkit-background-clip:padding-box;
+    -moz-background-clip:padding;
+    background-clip:padding-box;
+}
+
+#colours:before {
+    content:"";
+    position:absolute;
+    top:-px;
+    left:25;
+    right:0;
+    border-top:1px solid #ccc;
+}
